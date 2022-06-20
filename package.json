@@ -12,6 +12,9 @@
     "url": "git+https://github.com/AnnaKozlova0107/backend-project-lvl1.git"
   },
   "author": "annak",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnnaKozlova0107/backend-project-lvl1/issues"
