@@ -9,11 +9,12 @@ export const calc = () => {
     return sign;
   };
 
+  const operand1 = logic.randomNum();
+  const operand2 = logic.randomNum();
+  const operator = String(randomSign());
+
   const taskSubject = () => {
-    const operand1 = logic.randomNum();
-    const operand2 = logic.randomNum();
-    const operator = String(randomSign());
-    return `${operand1} ${operator} ${operand2}`;
+       return `${operand1} ${operator} ${operand2}`;
   };
 
   const correctAnswer = (operand1, operand2, operator) => {
@@ -26,5 +27,7 @@ export const calc = () => {
     }
   }
 
-  logic.gameLogic(nameGame, taskSubject, correctAnswer);
+  const rightAnswer = correctAnswer(operand1, operand2, operator);
+
+  logic.gameLogic(nameGame, taskSubject, rightAnswer);
 };
