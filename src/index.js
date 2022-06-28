@@ -11,7 +11,7 @@ export const randomSign = () => {
   return sign;
 };
 
-export const gameLogic = (nameGame, taskSubject, rightAnswer) => {
+export const gameLogic = (nameGame, expression, rightAnswer) => {
   const getName = () => readlineSync.question('May I have your name? ');
   const userName = getName();
   console.log('Hello, ' + userName + '!');
@@ -20,7 +20,7 @@ export const gameLogic = (nameGame, taskSubject, rightAnswer) => {
 
   let i = 0;
   while (i < 3) {
-    const questionSubject = taskSubject();
+    const questionSubject = expression;
     console.log('Question: ', questionSubject);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === rightAnswer) {
