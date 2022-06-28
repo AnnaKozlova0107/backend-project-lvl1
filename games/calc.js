@@ -27,7 +27,7 @@ export const calc = () => {
     }
   }
 
-  const rightAnswer = correctAnswer(operand1, operand2, operator);
+  const rightAnswer = String(correctAnswer(operand1, operand2, operator));
 
   logic.gameLogic(nameGame, taskSubject, rightAnswer);
 };
