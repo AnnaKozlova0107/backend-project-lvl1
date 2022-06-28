@@ -11,7 +11,7 @@ export const randomSign = () => {
   return sign;
 };
 
-export const gameLogic = (nameGame, taskSubject, correctAnswer) => {
+export const gameLogic = (nameGame, taskSubject, rightAnswer) => {
   const getName = () => readlineSync.question('May I have your name? ');
   const userName = getName();
   console.log('Hello, ' + userName + '!');
@@ -23,12 +23,11 @@ export const gameLogic = (nameGame, taskSubject, correctAnswer) => {
     const questionSubject = taskSubject();
     console.log('Question: ', questionSubject);
     const userAnswer = readlineSync.question('Your answer: ');
-    const check = (userAnswer === correctAnswer());
-    if (check === true) {
+    if (userAnswer === rightAnswer) {
       console.log('Correct!');
       i += 1;
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLes\'s try again, ${userName}!`);
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLes\'s try again, ${userName}!`);
     }
   }
 };
