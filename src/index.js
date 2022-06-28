@@ -30,4 +30,5 @@ export const gameLogic = (nameGame, taskSubject, rightAnswer) => {
       return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLes\'s try again, ${userName}!`);
     }
   }
+  return console.log(`Congatulations, ${userName}!`);
 };
