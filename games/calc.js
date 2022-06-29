@@ -10,46 +10,26 @@ export const calc = () => {
     const sign = coll[i];
     return sign;
   };
-
-    const taskSubject = () => {
-    const operand1 = logic.randomNum();
-    const operand2 = logic.randomNum();
-    const operator = String(randomSign());
-    return `${operand1} ${operator} ${operand2}`;
-  };
-
-  const correctAnswer = (operand1, operand2, operator) => {
-    if (operator === '+') {
-      return (operand1 + operand2);
-    } else if (operator === '*') {
-      return (operand1 * operand2);
-    } else {
-      return (operand1 - operand2);
-    }
-  }
-
-  const task = () => {
-    const result = [];
-    const operand1 = logic.randomNum();
-    const operand2 = logic.randomNum();
-    const operator = String(randomSign());
-    const temp = `${operand1} ${operator} ${operand2}`;
-    result.push(temp);
-    if (operator === '+') {
-      const sum = operand1 + operand2;
-      result.push(sum);
-    } else if (operator === '*') {
-      const mult = operand1 * operand2;
-      result.push(mult);
-    } else {
-      const other = operand1 - operand2;
-      result.push(other);
-    }
-    return result;
-  };
   
-  const expression = task[0];
-  const rightAnswer = String(task[1]);
+  const taskSubject = () => {
+    const questionSubject = [];
+    const operand1 = logic.randomNum();
+    const operand2 = logic.randomNum();
+    const operator = String(randomSign());
+    const expression = `${operand1} ${operator} ${operand2}`;
+    questionSubject.push(expression);
+    if (operator === '+') {
+      const answer = operand1 + operand2;
+      questionSubject.push(String(answer));
+    } else if (operator === '*') {
+      const answer = operand1 * operand2;
+      questionSubject.push(String(answer));
+    } else {
+      const answer = operand1 - operand2;
+      questionSubject.push(String(answer));
+    }
+    return questionSubject;
+  };
 
-  logic.gameLogic(nameGame, expression, rightAnswer);
+  logic.gameLogic(nameGame, taskSubject);
 };
