@@ -1,3 +1,6 @@
+### Brain Games
+A set of five simple console games to entairtaim you math skills. Each game asks you question which is to be answered correctly three times in raw to win. Even one incorrect answer will over the game.
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AnnaKozlova0107/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AnnaKozlova0107/backend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainabiliy)
