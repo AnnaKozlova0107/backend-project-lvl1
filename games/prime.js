@@ -32,3 +32,4 @@ export const prime = () => {
     // game logic from gameLogic
      logic.gameLogic(nameGame, taskSubject);
   };
+  

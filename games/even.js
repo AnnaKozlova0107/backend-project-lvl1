@@ -14,7 +14,7 @@ export const even = () => {
     } else {
       const answer = 'no';
       questionSubject.push(answer);
-    } 
+    }
     return questionSubject;
   };
 
