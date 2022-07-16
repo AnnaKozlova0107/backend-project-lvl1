@@ -1,11 +1,7 @@
 import * as logic from '../src/index.js';
 
 export const gcd = () => {
-  
-  // Task description
   const nameGame = 'Find the greatest common divisor of given numbers.';
-  
-  // game details
   const taskSubject = () => {
     const questionSubject = [];
     const number1 = logic.randomNum();
@@ -27,7 +23,5 @@ export const gcd = () => {
     }
     return questionSubject;
   };
-
-  // game logic from ggcdameLogic
-   logic.gameLogic(nameGame, taskSubject);
+  logic.gameLogic(nameGame, taskSubject);
 };
