@@ -1,7 +1,6 @@
 import * as logic from '../src/index.js';
 
 const calc = () => {
-
   const nameGame = 'What is the result of the expression?';
   const randomSign = () => {
     const coll = ['+', '-', '*'];

@@ -1,6 +1,6 @@
 import * as logic from '../src/index.js';
 
-export const even = () => {
+const even = () => {
   const nameGame = 'Answer "yes" if the number is even, otherwise answer "no".';
   const taskSubject = () => {
     const questionSubject = [];
