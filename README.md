@@ -10,16 +10,16 @@ Run npm ci and npm link
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainabiliy)
 
 ### Brain-even
-[![asciicast](https://asciinema.org/a/wKZLWfDRXqeaZQCUZf87Q2bLU.svg)](https://asciinema.org/a/wKZLWfDRXqeaZQCUZf87Q2bLU)
+[![asciicast](https://asciinema.org/a/sbjjQmHA9wXYiAKk1XOH3yp16.svg)](https://asciinema.org/a/sbjjQmHA9wXYiAKk1XOH3yp16)
 
 ### Brain-calculator
-[![asciicast](https://asciinema.org/a/8DmNol1Zhy5FL9nIOeZ7TKHP2.svg)](https://asciinema.org/a/8DmNol1Zhy5FL9nIOeZ7TKHP2)
+[![asciicast](https://asciinema.org/a/tA6cqMSKTUluCjQnFMimMqNyb.svg)](https://asciinema.org/a/tA6cqMSKTUluCjQnFMimMqNyb)
 
 ### Brain-gcd
-[![asciicast](https://asciinema.org/a/EHEzhooofBLEq4XWs7OSx8EOC.svg)](https://asciinema.org/a/EHEzhooofBLEq4XWs7OSx8EOC)
+[![asciicast](https://asciinema.org/a/CPSMstVsJOkDqEznCElBDqfto.svg)](https://asciinema.org/a/CPSMstVsJOkDqEznCElBDqfto)
 
 ### Brain-progression
-[![asciicast](https://asciinema.org/a/k300INvd1IWVUVDriBbToXyON.svg)](https://asciinema.org/a/k300INvd1IWVUVDriBbToXyON)
+[![asciicast](https://asciinema.org/a/CPSMstVsJOkDqEznCElBDqfto.svg)](https://asciinema.org/a/CPSMstVsJOkDqEznCElBDqfto)
 
 ### Brain-prime
-[![asciicast](https://asciinema.org/a/gDT1TgbJb0vWiSPa1k1vU9GL5.svg)](https://asciinema.org/a/gDT1TgbJb0vWiSPa1k1vU9GL5)
+[![asciicast](https://asciinema.org/a/PtT1Me5bdCYktiYtnFkg9mDHb.svg)](https://asciinema.org/a/PtT1Me5bdCYktiYtnFkg9mDHb)

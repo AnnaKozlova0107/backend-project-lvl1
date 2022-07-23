@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import progression from '../games/progression.js';
+import getGameData from '../games/progression.js';
 
-console.log('Welcome to the Brain Games!');
-progression();
+getGameData();

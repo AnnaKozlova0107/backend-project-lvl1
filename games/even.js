@@ -1,22 +1,15 @@
 import * as logic from '../src/index.js';
 
-const even = () => {
-  const nameGame = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const taskSubject = () => {
-    const questionSubject = [];
-    const expression = logic.randomNum();
-    questionSubject.push(expression);
-    if (expression % 2 === 0) {
-      const answer = 'yes';
-      questionSubject.push(answer);
-    } else {
-      const answer = 'no';
-      questionSubject.push(answer);
-    }
-    return questionSubject;
-  };
+const nameGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  logic.gameLogic(nameGame, taskSubject);
+const isEven = (number) => number % 2 === 0;
+
+const getGameData = () => {
+  const question = logic.randomNum();
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export default even;
+logic.gameLogic(nameGame, getGameData);
+
+export default getGameData;

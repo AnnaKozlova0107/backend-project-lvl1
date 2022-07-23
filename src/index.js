@@ -1,32 +1,25 @@
 import readlineSync from 'readline-sync';
 
-export const randomNum = () => Math.ceil((Math.random() * 100) / 15);
+export const randomNum = () => Math.ceil(Math.random() * 10);
 
-export const randomSign = () => {
-  const coll = ['+', '-', '*'];
-  const i = Math.floor(Math.random() * 3) + 1;
-  const sign = coll[i];
-  return sign;
-};
-
-export const gameLogic = (nameGame, taskSubject) => {
-  const getName = () => readlineSync.question('May I have your name? ');
-  const userName = getName();
+export const gameLogic = (nameGame, getGameData) => {
+  console.log('Welcome to the Brain Games!');
+  const getName = readlineSync.question('May I have your name? ');
+  const userName = getName;
   console.log(`Hello, ${userName}!`);
 
   console.log(nameGame);
-
-  let i = 0;
-  while (i < 3) {
-    const questionSubject = taskSubject();
-    console.log(`Question: ${questionSubject[0]}`);
+  const numberOfApproaches = 3;
+  for (let i = 0; i < numberOfApproaches; i += 1) {
+    const gameData = getGameData();
+    console.log(`Question: ${gameData[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === questionSubject[1]) {
+    if (userAnswer === gameData[1]) {
       console.log('Correct!');
-      i += 1;
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${questionSubject[1]}.\nLet's try again, ${userName}!`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${gameData[1]}.\nLet's try again, ${userName}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };

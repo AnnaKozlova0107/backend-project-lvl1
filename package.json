@@ -3,8 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/AnnaKozlova0107/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AnnaKozlova0107/backend-project-lvl1/actions)",
-  "main": "index.js",
-  "scripts": {
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
