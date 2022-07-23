@@ -21,9 +21,9 @@ const getGameData = () => {
   const progression = getProgression();
   const temp = progression[randomIndex];
   progression[randomIndex] = '..';
-  const str = progression.join(' ');
+  const strProgression = progression.join(' ');
   const correctAnswer = String(temp);
-  return [str, correctAnswer];
+  return [strProgression, correctAnswer];
 };
 logic.gameLogic(nameGame, getGameData);
 
