@@ -16,9 +16,10 @@ const makeCalculation = (operand1, operand2, operator) => {
   } if (operator === '*') {
     const answer = operand1 * operand2;
     return answer;
-  }
-  const answer = operand1 - operand2;
-  return answer;
+  } if (operator === '-') {
+    const answer = operand1 - operand2;
+    return answer;
+  } return null;
 };
 
 const getGameData = () => {
