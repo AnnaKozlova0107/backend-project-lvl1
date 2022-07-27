@@ -1,9 +1,9 @@
-import * as logic from '../src/index.js';
+import * as logic from '../index.js';
 
 const nameGame = 'What is the result of the expression?';
 const getRandomSign = () => {
   const coll = ['+', '-', '*'];
-  const i = Math.floor(Math.random() * 3);
+  const i = logic.randomNum(0, 2);
   const sign = coll[i];
   return sign;
 };
@@ -20,13 +20,14 @@ const makeCalculation = (operand1, operand2, operator) => {
   } return null;
 };
 const getGameData = () => {
-  const operand1 = logic.randomNum();
-  const operand2 = logic.randomNum();
+  const operand1 = logic.randomNum(0, 9);
+  const operand2 = logic.randomNum(0, 9);
   const operator = String(getRandomSign());
   const question = `${operand1} ${operator} ${operand2}`;
   const correctAnswer = String(makeCalculation(operand1, operand2, operator));
   return [question, correctAnswer];
 };
-logic.gameLogic(nameGame, getGameData);
 
-export default getGameData;
+const runCalcGame = () => logic.gameLogic(nameGame, getGameData);
+
+export default runCalcGame;

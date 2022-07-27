@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const randomNum = () => Math.ceil(Math.random() * 10);
+export const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const gameLogic = (nameGame, getGameData) => {
   console.log('Welcome to the Brain Games!');

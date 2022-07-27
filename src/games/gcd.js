@@ -1,4 +1,4 @@
-import * as logic from '../src/index.js';
+import * as logic from '../index.js';
 
 const nameGame = 'Find the greatest common divisor of given numbers.';
 
@@ -18,13 +18,13 @@ const getGCD = (number1, number2) => {
 };
 
 const getGameData = () => {
-  const number1 = logic.randomNum();
-  const number2 = logic.randomNum();
+  const number1 = logic.randomNum(1, 9);
+  const number2 = logic.randomNum(1, 9);
   const expression = `${number1} ${number2}`;
   const correctAnswer = String(getGCD(number1, number2));
   return [expression, correctAnswer];
 };
 
-logic.gameLogic(nameGame, getGameData);
+const runGcdGame = () => logic.gameLogic(nameGame, getGameData);
 
-export default getGameData;
+export default runGcdGame;
